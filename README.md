@@ -8,10 +8,9 @@ Un videojuego de lucha y acción en donde las peleas de boxeo entre robots son u
 2. ```cd "C:\Users\usuario\Documents\Repositorio"```
 3. ```git clone https://github.com/jfelipepv/SimuladorAuto```
 4. Ir a su github 
-5. Hacer fork del repositorio a su cuenta
-6. Copiar la URL de su repositorio (La pueden tomar del boton clone (El verde))
-6. Ir a la consola de git y ejecutar ```cd "SimuladorAuto"```
-7. ```git remote add fork <URL>```
+5. Copiar la URL de su repositorio (La pueden tomar del boton clone (El verde))
+6. Ir a la consola de git y ejecutar ```cd "Robot Fight"``` 
+7. ```git add .```
 8. Ir a Unity Hub
 9. Darle click a Add y buscar la carpeta donde quedo clonado su repo
 10. Abrir el proyecto en Unity
@@ -22,7 +21,7 @@ Un videojuego de lucha y acción en donde las peleas de boxeo entre robots son u
     sugerencia hacer ```git add <archivo>```
 14. verificar con git status los cambios
 15. ```git commit -m "Agregando escena SuNombre"```
-16. ```git push fork master```
+16. ```git push origin main```
 17. Les va a pedir las credenciales de github
 18. Ir a su repositori en github y verificar que el cambio esta
 19. Hacer un Pull Request (Darle click en New Pull Request)
