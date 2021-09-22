@@ -26,4 +26,9 @@ public class CharacterAnimation : MonoBehaviour
         anim.SetTrigger(AnimationTags.PRLeft_Trigger);
     }
 
+    public void Hurt()
+    {
+        anim.SetTrigger(AnimationTags.Hurt_Trigger);
+    }
+
 }
