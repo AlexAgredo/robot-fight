@@ -26,3 +26,10 @@ Un videojuego de lucha y acción en donde las peleas de boxeo entre robots son u
 18. Ir a su repositori en github y verificar que el cambio esta
 19. Hacer un Pull Request (Darle click en New Pull Request)
 20. Colocar un mensaje con su cambio, colocan su nombre
+
+*Para bajar cambios sin problemas:*
+1. git stash
+2. git pull origin main
+3. git add .
+4. git commit -m ""
+5. git push origin main
