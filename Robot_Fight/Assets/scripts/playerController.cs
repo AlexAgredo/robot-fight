@@ -34,7 +34,7 @@ public class playerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float horizontal = Input.GetAxis(Axis.Horizontal_Axis);
+        float horizontal = Input.GetAxis(Axis.Horizontal_Axis); //Unity toma por defecto a y d o las teclas como input
         HandleMovement(horizontal);
         Flip(horizontal);
     }
