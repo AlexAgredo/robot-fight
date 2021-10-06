@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum ComboState
 {
-    None, 
+    None,
     Punch1,
     Punch2,
     Punch3
@@ -17,6 +17,11 @@ public class PlayerAttack : MonoBehaviour
     private float defaultComboTimer = 0.5f;
     private float currentComboTimer;
     private ComboState currentComboState;
+
+    [SerializeField]
+    private GameObject punch1AttackPoint;
+    [SerializeField]
+    private GameObject punch2AttackPoint;
 
     private void Awake()
     {
@@ -35,15 +40,13 @@ public class PlayerAttack : MonoBehaviour
     {
         ComboAttack();
         ResetComboState();
-
-
     }
 
     void ComboAttack()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if(currentComboState == ComboState.Punch3)
+            if (currentComboState == ComboState.Punch3)
             {
                 return;
             }
@@ -52,7 +55,7 @@ public class PlayerAttack : MonoBehaviour
             activateTimeToReset = true;
             currentComboTimer = defaultComboTimer;
 
-            if(currentComboState == ComboState.Punch1)
+            if (currentComboState == ComboState.Punch1)
             {
                 myAnim.punchR();
             }
@@ -102,4 +105,31 @@ public class PlayerAttack : MonoBehaviour
             }
         }
     }
+
+    public void ActivatePunch1()
+    {
+        punch1AttackPoint.SetActive(true);
+    }
+
+    public void ActivatePunch2()
+    {
+        punch2AttackPoint.SetActive(true);
+    }
+
+    public void DeaactivatePunch1()
+    {
+        punch1AttackPoint.SetActive(false);
+    }
+
+    public void DeaactivatePunch2()
+    {
+        punch2AttackPoint.SetActive(false);
+    }
+
+    public void DeactiveAllAttack()
+    {
+        punch1AttackPoint.SetActive(false);
+        punch2AttackPoint.SetActive(false);
+    }
 }
+

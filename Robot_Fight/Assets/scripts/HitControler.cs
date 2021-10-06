@@ -15,10 +15,10 @@ public class HitControler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if(collision.tag == tags.Player_Tag && !GetPlayer.isDefense)
-        //{
-        //    Instantiate(punchSlasher, new Vector3(transform.position.x, transform.position.y, -4.0f), Quaternion.identity);
-        //}
+        /*if (collision.tag == tags.Player_Tag && !GetPlayer.isDefense)
+        {
+            Instantiate(punchSlasher, new Vector3(transform.position.x, transform.position.y, -4.0f), Quaternion.identity);
+        }*/
 
         if (collision.tag == tags.Enemy_Tag)
         {

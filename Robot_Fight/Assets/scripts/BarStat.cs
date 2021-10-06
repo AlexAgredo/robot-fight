@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 [Serializable]
-public class BarStat 
+public class BarStat
 {
     public BarScript bar;
     [SerializeField]
@@ -45,3 +45,4 @@ public class BarStat
     }
 
 }
+
